@@ -7,9 +7,9 @@ pushd `dirname $0` > /dev/null
 THRIFTRPM_DIR=$(pwd)
 popd > /dev/null
 
-cd $RPMBUILD_DIR/SOURCES
-cp $THRIFTRPM_DIR/*.patch .
-cd -
+#cd $RPMBUILD_DIR/SOURCES
+#cp $THRIFTRPM_DIR/*.patch .
+#cd -
 
 cd $RPMBUILD_DIR/SPECS
 cp $THRIFTRPM_DIR/*.spec .

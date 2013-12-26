@@ -40,11 +40,13 @@ sed -i '/#/d;/^$/d' lib/hs/Setup.lhs
 %build
 %configure \
   --without-c \
+  --without-cpp \
   --without-c_glib \
   --without-haskell \
   --without-java \
   --without-perl \
   --without-php \
+  --without-python \
   --without-ruby \
   --without-erlang \
   --enable-static=yes
@@ -59,14 +61,12 @@ sed -i '/#/d;/^$/d' lib/hs/Setup.lhs
 find %{buildroot} -type f -name "*.la" -exec rm -f {} ';'
 
 # Fix non-standard-executable-perm
-%{__chmod} 0755 %{buildroot}%{python_sitearch}/%{name}/protocol/fastbinary.so
 
 %clean
 %{__rm} -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%doc CHANGES CONTRIBUTORS LICENSE NEWS NOTICE README doc/
 %{_bindir}/thrift
 
 %changelog
