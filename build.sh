@@ -11,6 +11,9 @@ popd > /dev/null
 #cp $THRIFTRPM_DIR/*.patch .
 #cd -
 
+mkdir -p $RPMBUILD_DIR/SPECS
+mkdir -p $RPMBUILD_DIR/SOURCES
+
 cd $RPMBUILD_DIR/SPECS
 cp $THRIFTRPM_DIR/*.spec .
 cd -
