@@ -1,14 +1,12 @@
 Name:             thrift
-Version:          0.9.1
+Version:          0.9.3
 Release:          1%{?dist}
 Summary:          A multi-language RPC and serialization framework
 
 Group:            System Environment/Libraries
 License:          ASL 2.0
 URL:              http://incubator.apache.org/thrift
-Source0:          http://www.eng.lsu.edu/mirrors/apache/%{name}/%{version}/%{name}-%{version}.tar.gz
-#Source1:          thrift_protocol.ini
-#Patch0:           thrift-0.5.0-noivy.patch
+Source0:          https://archive.apache.org/dist/%{name}/%{version}/%{name}-%{version}.tar.gz
 BuildRoot:        %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildRequires:    byacc
