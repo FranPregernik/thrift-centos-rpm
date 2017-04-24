@@ -17,6 +17,7 @@ BuildRequires:    libevent-devel
 BuildRequires:    libtool
 BuildRequires:    mono-devel >= 1.2.6
 BuildRequires:    zlib-devel
+BuildRequires:    openssl-devel
 
 %description
 Thrift is a software framework for scalable cross-language services
