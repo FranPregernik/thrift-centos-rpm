@@ -37,8 +37,6 @@ sed -i '/#/d;/^$/d' lib/hs/Setup.lhs
 
 %build
 %configure \
-  --without-c \
-  --without-cpp \
   --without-c_glib \
   --without-haskell \
   --without-java \
